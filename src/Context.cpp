@@ -106,8 +106,8 @@ void Context::loadShaders()
 	ngl::ShaderLib *shader=ngl::ShaderLib::instance();
 	shader->createShaderProgram("Colour");
 
-  shader->attachShader("ColourVertex",ngl::VERTEX);
-  shader->attachShader("ColourFragment",ngl::FRAGMENT);
+  shader->attachShader("ColourVertex",ngl::ShaderType::VERTEX);
+  shader->attachShader("ColourFragment",ngl::ShaderType::FRAGMENT);
   shader->loadShaderSource("ColourVertex","shaders/ColourTextureVert.glsl");
   shader->loadShaderSource("ColourFragment","shaders/ColourTextureFrag.glsl");
 
