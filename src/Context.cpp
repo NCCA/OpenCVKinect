@@ -97,7 +97,6 @@ void Context::swapBuffers(OpenGLWindow *_window)
 void Context::close()
 {
   std::cerr<<"closing down\n";
-  ngl::NGLInit::instance()->NGLQuit();
 }
 
 //----------------------------------------------------------------------------------------------------------------------
